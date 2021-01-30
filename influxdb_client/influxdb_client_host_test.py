@@ -19,8 +19,8 @@ database = 'md_rates'
 class InfluxClientHostTest:
     
     def __init__(self):        
-        user_name = 'xren'
-        passwords = '5X%UZ^Xa.bH@9Ze6'         
+        user_name = ''
+        passwords = ''         
         self.client = InfluxDBClient(host=HOST_test, port=8086, username=user_name, password=passwords)
         self.client.switch_database(database)
         #self.dfclient = DataFrameClient(host=HOST,port=8086, username=user_name, password=passwords)
